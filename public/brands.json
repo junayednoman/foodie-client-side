@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "brandName": "GreenHarvest",
+        "imgUrl": "https://i.postimg.cc/mk3bMxg1/mixed-fruits-with-apple-banana-orange-other.jpg"
+    },
+    {
+        "id": 2,
+        "brandName": "PureNature Produce",
+        "imgUrl": "https://i.postimg.cc/nV3SFRk3/23458.jpg"
+    },
+    {
+        "id": 3,
+        "brandName": "Fruitopia Fresh",
+        "imgUrl": "https://i.postimg.cc/VkQqmn37/red-apple-basket.jpg"
+    },
+    {
+        "id": 4,
+        "brandName": "PureNature Produce",
+        "imgUrl": "https://i.postimg.cc/nrxXNGs7/17740.jpg"
+    },
+    {
+        "id": 5,
+        "brandName": "GardenGrove Goodness",
+        "imgUrl": "https://i.postimg.cc/cC5NfsNH/assortment-vegetables-green-herbs-market-vegetables-basket.jpg"
+    },
+    {
+        "id": 6,
+        "brandName": "OrchardBliss Bounty",
+        "imgUrl": "https://i.postimg.cc/tRV0cHyh/assortment-exotic-fruits-table.jpg"
+    }
+]
