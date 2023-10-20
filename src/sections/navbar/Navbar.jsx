@@ -1,13 +1,26 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/logo.png'
+import { useContext } from "react";
+import { AuthContext } from "../../auth provider/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
 
 const Navbar = () => {
-
+    const { user, logOut, loading } = useContext(AuthContext);
     const menu = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/add-product'>Add Product</NavLink></li>
         <li><NavLink to='/cart'>My Cart</NavLink></li>
     </>
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                toast('User logged out successfully')
+            })
+            .catch(error => {
+                toast(error.message)
+            })
+    }
     return (
         <div>
             <div className="max-w-7xl lg:px-10 px-0 lg:mx-auto md:mx-9 mx-3">
@@ -31,11 +44,23 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <Link className="md:py-3 py-2 px-5 md:px-7  font-medium text-base border-2 hover:text-[#A4E889] duration-300 hover:bg-transparent border-[#A4E889] bg-[#A4E889]">Login</Link>
-
+                        {
+                            loading ? <p>Loading...</p> :
+                                <>
+                                    {
+                                        user ? <div className="flex gap-3">
+                                            <div className="border p-1 md:flex gap-2 items-center">
+                                                <img className="w-9 mx-auto rounded-full" src={user?.photoURL} />
+                                                <h4 className="md:text-base text-sm md:text-left text-center">{user?.displayName}</h4>
+                                            </div>
+                                            <Link onClick={handleLogOut} className="md:py-3 py-2 px-5 md:px-7  font-medium text-base border-2 hover:text-[#A4E889] duration-300 hover:bg-transparent border-[#A4E889] bg-[#A4E889]">Log Out</Link>
+                                        </div> : <Link to='/signIn' className="md:py-3 py-2 px-5 md:px-7  font-medium text-base border-2 hover:text-[#A4E889] duration-300 hover:bg-transparent border-[#A4E889] bg-[#A4E889]">Login</Link>
+                                    }</>
+                        }
                     </div>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

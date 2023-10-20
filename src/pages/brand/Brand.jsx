@@ -5,7 +5,7 @@ const Brand = ({ brand }) => {
     const { brandName, imgUrl } = brand;
     return (
         <div>
-            <Link>
+            <Link to={`/brand-details/${brandName}`}>
                 <div className='relative' style={{ backgroundImage: `url(${imgUrl})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                     <div className='w-full h-[180px] md:h-[250px] text-white md:px-8 px-4' style={{ backgroundColor: 'rgba(0, 0, 0, .5)' }}>
                         <div className='absolute bottom-4 md:bottom-8'>
