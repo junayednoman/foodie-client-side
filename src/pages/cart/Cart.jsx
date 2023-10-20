@@ -7,7 +7,6 @@ import { AuthContext } from "../../auth provider/AuthProvider";
 const Cart = () => {
     const [products, setProducts] = useState([]);
     const { user } = useContext(AuthContext);
-console.log(user);
     const userEmail = user.email;
 
 

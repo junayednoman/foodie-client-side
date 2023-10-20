@@ -4,10 +4,8 @@ import Products from "../../sections/products/Products";
 import noDataImg from '../../assets/no data.png'
 
 
-
 const BrandDetails = () => {
     const products = useLoaderData();
-    console.log(products.length);
     const brandName = useParams();
     return (
         <div>

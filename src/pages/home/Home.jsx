@@ -6,7 +6,7 @@ import About from "../about us/About";
 
 const Home = () => {
     const brands = useLoaderData();
-    console.log(brands);
+    console.log(import.meta.env.VITE_HELLO);
     return (
         <div>
             <div>

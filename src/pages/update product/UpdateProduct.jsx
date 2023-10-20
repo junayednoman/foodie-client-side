@@ -5,9 +5,7 @@ import { AuthContext } from "../../auth provider/AuthProvider";
 
 const UpdateProduct = () => {
     const { hello } = useContext(AuthContext)
-    console.log(hello);
     const productForUpdate = useLoaderData();
-    console.log((productForUpdate));
 
     const handleUpdateProduct = e => {
         e.preventDefault();
@@ -19,7 +17,6 @@ const UpdateProduct = () => {
         const rating = form.rating.value;
         const image = form.image.value;
         const product = { name, brandName, type, price, rating, image }
-        console.log(product);
 
         fetch(`http://localhost:5000/products/${productForUpdate.brandName}/${productForUpdate._id}`, {
             method: 'PUT',
@@ -30,7 +27,6 @@ const UpdateProduct = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.modifiedCount === 1) {
                     toast('Product has been updated successfully!')
                 }
