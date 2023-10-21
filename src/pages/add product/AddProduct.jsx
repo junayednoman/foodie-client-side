@@ -16,7 +16,7 @@ const AddProduct = () => {
         const image = form.image.value;
         const product = { name, brandName, type, price, rating, description, image }
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://brand-store-server-eosin.vercel.app/products', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"

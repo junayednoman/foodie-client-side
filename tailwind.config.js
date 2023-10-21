@@ -12,5 +12,10 @@ export default {
     },
   },
   plugins: [require("daisyui")],
+  darkMode: '',
 }
 
+// module.exports = {
+//   darkMode: 'media',
+//   // ...
+// }

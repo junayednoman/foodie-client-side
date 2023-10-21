@@ -12,7 +12,7 @@ const ProductDetails = () => {
 
     const handleAddToCart = () => {
         const cartData = { name, brandName, type, price, rating, description, image, userEmail };
-        fetch('http://localhost:5000/cart', {
+        fetch('https://brand-store-server-eosin.vercel.app/cart', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

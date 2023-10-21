@@ -2,31 +2,31 @@
     {
         "id": 1,
         "brandName": "GreenHarvest",
-        "imgUrl": "https://i.postimg.cc/mk3bMxg1/mixed-fruits-with-apple-banana-orange-other.jpg"
+        "imgUrl": "https://i.postimg.cc/Pqjqm5H2/Fruit-Store-Premium-Product-Logo-1.png"
     },
     {
         "id": 2,
         "brandName": "PureNature Produce",
-        "imgUrl": "https://i.postimg.cc/nV3SFRk3/23458.jpg"
+        "imgUrl": "https://i.postimg.cc/MK9XJSyG/Vegetable-Fruits-Organic-Food-Store-Logo.png"
     },
     {
         "id": 3,
         "brandName": "Fruitopia Fresh",
-        "imgUrl": "https://i.postimg.cc/VkQqmn37/red-apple-basket.jpg"
+        "imgUrl": "https://i.postimg.cc/x1WzBQ2z/Fruit-Store-Premium-Product-Logo.png"
     },
     {
         "id": 4,
-        "brandName": "VeggieVibrance Delights",
-        "imgUrl": "https://i.postimg.cc/nrxXNGs7/17740.jpg"
+        "brandName": "VeggieVibrance",
+        "imgUrl": "https://i.postimg.cc/W3DfTrY4/Green-Retro-Lettuce-Vegetable-Logo.png"
     },
     {
         "id": 5,
-        "brandName": "GardenGrove Goodness",
-        "imgUrl": "https://i.postimg.cc/cC5NfsNH/assortment-vegetables-green-herbs-market-vegetables-basket.jpg"
+        "brandName": "GardenGrove",
+        "imgUrl": "https://i.postimg.cc/yNjSxZRF/Vegetable-Fruits-Organic-Food-Store-Logo-1.png"
     },
     {
         "id": 6,
         "brandName": "OrchardBliss Bounty",
-        "imgUrl": "https://i.postimg.cc/tRV0cHyh/assortment-exotic-fruits-table.jpg"
+        "imgUrl": "https://i.postimg.cc/jdWNccw2/Green-Minimalist-Organic-Juice-Logo.png"
     }
 ]

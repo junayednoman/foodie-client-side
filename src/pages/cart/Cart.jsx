@@ -11,7 +11,7 @@ const Cart = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/cart/${userEmail}`)
+        fetch(`https://brand-store-server-eosin.vercel.app/cart/${userEmail}`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data)
@@ -19,7 +19,7 @@ const Cart = () => {
     }, [])
 
     const handleItemDelete = id => {
-        fetch(`http://localhost:5000/cart/${id}`, {
+        fetch(`https://brand-store-server-eosin.vercel.app/cart/${id}`, {
             method: 'delete'
         })
             .then(res => res.json())

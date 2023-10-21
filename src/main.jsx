@@ -40,17 +40,17 @@ const router = createBrowserRouter([
       {
         path: '/brand-details/:brandName',
         element: <BrandDetails></BrandDetails>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.brandName}`)
+        loader: ({ params }) => fetch(`https://brand-store-server-eosin.vercel.app/products/${params.brandName}`)
       },
       {
         path: '/products/:brandName/:id',
         element: <PrivateParent><ProductDetails></ProductDetails></PrivateParent>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.brandName}/${params.id}`)
+        loader: ({ params }) => fetch(`https://brand-store-server-eosin.vercel.app/products/${params.brandName}/${params.id}`)
       },
       {
         path: '/update-product/:brandName/:id',
         element: <PrivateParent><UpdateProduct></UpdateProduct></PrivateParent>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.brandName}/${params.id}`)
+        loader: ({ params }) => fetch(`https://brand-store-server-eosin.vercel.app/products/${params.brandName}/${params.id}`)
       },
       {
         path: '/signUp',

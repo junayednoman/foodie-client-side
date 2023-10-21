@@ -18,7 +18,7 @@ const UpdateProduct = () => {
         const image = form.image.value;
         const product = { name, brandName, type, price, rating, image }
 
-        fetch(`http://localhost:5000/products/${productForUpdate.brandName}/${productForUpdate._id}`, {
+        fetch(`https://brand-store-server-eosin.vercel.app/products/${productForUpdate.brandName}/${productForUpdate._id}`, {
             method: 'PUT',
             headers: {
                 "content-type": "application/json"

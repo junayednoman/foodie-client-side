@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Products = ({ product }) => {
     const { name, brandName, type, price, rating, image, _id } = product;
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-0 items-center border border-[#A4E889] md:p-6 p-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 md:gap-1 gap-0 items-center border border-[#A4E889] md:p-2 p-4'>
             <div className='text-left md:text-center'>
                 <img src={image} alt="" />
 
