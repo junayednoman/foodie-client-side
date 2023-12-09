@@ -1,10 +1,10 @@
 # Foodie
 
-Welcome to Foodie, a front-end web development project aimed at creating a visually stunning and user-friendly digital experience for a multi-vendor food shop. Our mission is to craft an intuitive and engaging interface that seamlessly connects users with content and functionality.
+Welcome to Foodie, a front-end web development project aimed at creating a visually stunning and user-friendly digital experience for a multi vendor food shop. My mission is to craft an intuitive and engaging interface that seamlessly connects users with content and functionality.
 
 ## 💡 Key Features:
 
-1️⃣ **Responsive Design**: Our front end is built with responsiveness in mind, ensuring a flawless user experience across a variety of devices, from desktops to tablets and smartphones.
+1️⃣ **Responsive Design**: Our front-end is built with responsiveness in mind, ensuring a flawless user experience across a variety of devices, from desktops to tablets and smartphones.
 
 2️⃣ **Intuitive User Interface**: We prioritize user-centric design, focusing on creating an interface that is easy to navigate and understand. From clear navigation menus to interactive elements, our goal is to enhance user interaction.
 
